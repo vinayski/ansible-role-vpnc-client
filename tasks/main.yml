@@ -1,0 +1,32 @@
+---
+- name: install VPN and RSA Token dependencies
+  apt:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - stoken
+    - expect
+    - vpnc
+    - sshuttle
+
+- pip:
+    name: pexpect
+    
+- name: Import Token
+  expect: 
+    command: stoken import --force --file={{}}
+    responses:
+        (.*)word: \n
+  when:
+    - token_file is defined
+
+- name: Applying vpnc client configurations
+  template:
+    src: default.conf.j2
+    dest: /etc/vpnc/default.conf
+    owner: root
+    group: root
+    mode: 0640
+  when:
+    - vpnc_options.ipsec_gateway is defined
+
