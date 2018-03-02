@@ -4,6 +4,10 @@ galaxy_info:
   author: vinayski
   description:  VPN client for Cisco VPN3000 Concentrator, IOS and PIX
   license: None
+  platforms:
+  - name: Debian
+    versions:
+    - all
   min_ansible_version: 2.2
   galaxy_tags:
     - vpnc
