@@ -1,7 +1,9 @@
 # ansible-role-vpnc-client
 [![Build Status](https://travis-ci.org/vinayski/ansible-role-vpnc-client.svg?branch=master)](https://travis-ci.org/vinayski/ansible-role-vpnc-client)
 
-[Ansible Galaxy Role](https://galaxy.ansible.com/vinayski/ansible-role-vpnc-client) to Setup VPN client for Cisco VPN3000 Concentrator, IOS and PIX for use with RSA Token
+[Ansible Galaxy Role](https://galaxy.ansible.com/vinayski/ansible-role-vpnc-client) to Setup VPN client for Cisco VPN3000 Concentrator, IOS and PIX for use with RSA Token. 
+
+Used for setting up CI/CD pipeline across networks using VPN tunnels.
 
 ## Requirements
 
