@@ -32,7 +32,7 @@ None
 
 ## License
 
-[ISC](LICENSE) © 2022 vinayski
+[GNU](LICENSE) © 2022 vinayski
 
 ## Author Information
 
